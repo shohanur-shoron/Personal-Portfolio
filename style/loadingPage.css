@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sunflower:wght@300;500;700&family=Syncopate:wght@400;700&display=swap');
+
+.loadingPage{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Syncopate", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    background-color: #000000;
+    z-index: 99999;
+    animation: fadeOut 3.5s cubic-bezier(0.640, 0.010, 0.000, 1.005) forwards;
+}
+
+#my-text{
+    color: #fff;
+    overflow: hidden;
+}
+
+
+/* cubic-bezier(0.640, 0.010, 0.000, 1.005) */
+@keyframes fadeOut {
+    0%{
+        top: 0%;
+    }
+    
+
+    50%{
+        top: 0;
+    }
+    100% {
+        top: -100%;
+    }
+}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sunflower:wght@300;500;700&family=Syncopate:wght@400;700&display=swap');
+
+.rightPart{
+    z-index: 1002;
+}
+
+.navBar{
+    /* border: 1px solid red; */
+    position: fixed;
+    top: 5%;
+}
+
+.text1{
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: white;
+    font-weight: 300;
+    height: 30px;
+    overflow: hidden;
+    
+
+    .topText, .bottomText{
+        height: 100%;
+        width: 100%;
+        transition: 0.4s;
+    }
+}
+
+.text1:hover .topText{
+    transform: translateY(-100%);
+    color: #b7ab98;
+}
+.text1:hover .bottomText{
+    transform: translateY(-100%);
+    color: #b7ab98;
+}

@@ -1,0 +1,42 @@
+.cursor{
+    position: fixed;
+    top: var(--posX);
+    left: var(--posY);
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    height: 25px;
+    width: 25px;
+    background-color: #EB5939;
+    pointer-events: none;
+    border-radius: 50%;
+    transition: height 100ms, width 100ms, background-color 100ms;
+}
+
+.curserVanis{
+    height: 0px;
+    width: 0px;
+}
+
+.biggerCursor{
+    height: 85px;
+    width: 85px;
+    background-color: red;
+}
+
+.semiBiggerCursor{
+    height: 40px;
+    width: 40px;
+    background-color: red;
+}
+
+.smallCursor{
+    height: 15px;
+    width: 15px;
+    background-color: red;
+}
+
+.blandeMode{
+    /* height: 60px;
+    width: 60px; */
+    mix-blend-mode: difference;
+}

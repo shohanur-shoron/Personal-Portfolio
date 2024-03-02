@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sunflower:wght@300;500;700&family=Syncopate:wght@400;700&display=swap');
+
+.homePageMainText{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.mainText1, .mainText2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.innerText1, .innerText2{
+    padding: 20px;
+    width: 70%;
+}
+
+.mainText2{
+    /* background-color: #eb5a39; */
+    background-color: black;
+    clip-path: circle(0px at var(--x, 50%) var(--y, 50%));
+    /* clip-path: circle(100px at 50% 50%); */
+    transition: clip-path 100ms;
+}
+
+.clipPath{
+    clip-path: circle(200px at var(--x, 50%) var(--y, 50%));
+}
+
+.textMove1{
+    position: relative;
+    left: -80px;
+    color: red;
+}
+
+.textMove2{
+    position: relative;
+    left: 130px;
+}
+
+.textMove3{
+    position: relative;
+    left: -150px;
+}
+
+.textMove4{
+    position: relative;
+    left: 165px;
+    color: #ff0000;
+}
