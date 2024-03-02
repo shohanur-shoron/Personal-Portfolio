@@ -32,7 +32,7 @@ In the education section, I've showcased my supposed motivations and achievement
 This section showcases my educational timeline and the institutions attended. Hovering over the timeline reveals the institutions, providing a seamless browsing experience for visitors.
 
 ## Project Page
-![image](https://github.com/shohanur-shoron/Personal-Portfolio/assets/158572434/f0dbd242-5751-4db2-aa9f-f2dc99fd6a80)
+![image](https://github.com/shohanur-shoron/Personal-Portfolio/assets/158572434/bba3d7e2-6522-4909-9b20-4dfc5e23e16d)
 This section serves as evidence of my beginner status in the field. While I may not yet have any completed projects to showcase, I've incorporated special animations into the empty project section for your exploration.
 
 ## Contact Page
