@@ -40,4 +40,4 @@ This section serves as evidence of my beginner status in the field. While I may 
 In the contact section, you'll find a variety of links that enable you to reach out to me anytime, from anywhere, and on any platform. Whether you prefer email, social media, or other communication channels, there's a convenient way for you to get in touch. Feel free to connect with me at your convenience—I look forward to hearing from you!
 
 ### Website Link
-Feel free to visit and explore my website at [HERE](https://thisisshoron.000webhostapp.com/){:target="_blank"}
+Feel free to visit and explore my website at [HERE](https://thisisshoron.000webhostapp.com/)
