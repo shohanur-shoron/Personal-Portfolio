@@ -11,7 +11,7 @@
     flex-direction: column;
     font-family: "Syncopate", sans-serif;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2rem; /* Default font size */
     background-color: #000000;
     z-index: 99999;
     animation: fadeOut 3.5s cubic-bezier(0.640, 0.010, 0.000, 1.005) forwards;
@@ -20,6 +20,7 @@
 #my-text{
     color: #fff;
     overflow: hidden;
+    text-align: center; /* Center text for better appearance on wrap */
 }
 
 
@@ -35,5 +36,24 @@
     }
     100% {
         top: -100%;
+    }
+}
+
+/* Responsive adjustments for loading page text */
+@media (max-width: 768px) {
+    .loadingPage {
+        font-size: 1.5rem; /* Slightly smaller for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .loadingPage {
+        font-size: 1.2rem; /* Smaller for mobile phones */
+    }
+    #my-text h1 { /* Target the h1 specifically if needed */
+        font-size: 1.5rem; /* Example if h1 is Shohanur.Rahman */
+    }
+    #my-text h3 { /* Target the h3 specifically if needed */
+        font-size: 1rem; /* Example if h3 is @2025 */
     }
 }

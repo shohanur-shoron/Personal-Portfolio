@@ -1,0 +1,6 @@
+/* General rule for responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Prevents bottom spacing and allows easier margin/padding control */
+}
