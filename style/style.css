@@ -374,3 +374,212 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+/* General Responsive Styles */
+@media (max-width: 1024px) { /* Tablet and below */
+    .midPart {
+        width: 70%; /* Reduce mid part width, increase side parts */
+    }
+    .leftPart, .rightPart {
+        width: 15%;
+    }
+    .leftPart .leftPartUpper, .leftPart .leftPartLower {
+        width: 15%; /* Match parent */
+    }
+    .aboutMe .aboutMeMain, .whatIdo .mainWhatIdo, .educationDiv .mainEducationDiv, .projectDiv .mainProjectDiv, .contactDiv .mainContactDiv {
+        width: 90%; /* Increase content width for better use of space */
+    }
+    .rightTextDiv {
+        font-size: 2.5rem; /* Adjust About me text */
+    }
+    .mainTextinEducation1, .mainTextinEducation2 {
+        font-size: 2.2rem; /* Adjust Education description text */
+    }
+    .projectDiv .mainProjectDiv .projectDivText .projectDivText1, .projectDivText2 {
+        font-size: 2.5rem; /* Adjust Project section text */
+    }
+
+    /* Adjusting vw fonts from menuDiv.css for tablets */
+    /* Corresponding classes from style/menuDiv.css */
+    .projectMenu .coverContainer .menuText { /* .menuText in menuDiv.css */
+        font-size: clamp(1.8rem, 5vw, 4rem);
+    }
+    .menuText1 { /* .menuText1 in menuDiv.css - Education timelines */
+        font-size: clamp(2rem, 7vw, 5rem);
+    }
+    .contactTextMenu { /* .contactTextMenu in menuDiv.css */
+        font-size: clamp(0.9rem, 2vw, 1.5rem) !important;
+    }
+    .contactTextMenuEmail { /* .contactTextMenuEmail in menuDiv.css */
+        font-size: clamp(0.6rem, 0.8vw, 0.9rem) !important;
+    }
+    .contactTextMenuEmail .lightText { /* Nested class, ensure this selector works or adjust */
+        font-size: clamp(0.7rem, 1.2vw, 1rem);
+    }
+    .menuTextSpan1 { font-size: clamp(1.3rem, 4vw, 3rem); }
+    .menuTextSpan2 { font-size: clamp(1.1rem, 2.8vw, 2.5rem); }
+    .menuTextSpan3 { font-size: clamp(1.2rem, 3vw, 2.7rem); }
+    .menuTextSpan4, .menuTextSpan5, .menuTextSpan6, .menuTextSpan8 { font-size: clamp(1.3rem, 4vw, 3rem); }
+    .menuTextSpan7 { font-size: clamp(1.2rem, 3.5vw, 2.8rem); }
+}
+
+@media (max-width: 768px) { /* Smaller tablets / Large Mobiles */
+    .mainSection {
+        flex-direction: column; /* Stack sections vertically */
+        height: auto; /* Adjust height for stacked content */
+    }
+    .leftPart, .midPart, .rightPart {
+        width: 100%; /* Full width for stacked sections */
+        height: auto;
+        position: static; /* Reset positioning for flow */
+    }
+    .leftPart .leftPartUpper, .leftPart .leftPartLower { /* Adjust sidebar elements */
+        position: static; /* No longer fixed */
+        width: 100%;
+        flex-direction: row; /* Align items horizontally */
+        justify-content: space-around; /* Space out icons */
+        padding: 10px 0;
+    }
+    .leftPart .leftPartUpper img { height: 60px; } /* Smaller logo */
+    .leftPart .leftPartLower .icons img { height: 22px; } /* Smaller social icons */
+
+    .aboutMe, .whatIdo, .educationDiv, .nextEducation, .projectDiv, .contactDiv {
+        height: auto; /* Auto height for content */
+        min-height: 50vh; /* Ensure some minimum height */
+        border-radius: 0; /* Remove border radius for full width sections */
+    }
+    .aboutMe .aboutMeMain {
+        flex-direction: column; /* Stack image and text */
+        text-align: center;
+    }
+    .leftImageDiv, .rightTextDiv {
+        width: 80%; /* Adjust width for stacked layout */
+        margin-bottom: 20px;
+    }
+    .rightTextDiv {
+        font-size: 2rem;
+    }
+    .aboutMeText { /* Title "About Me" */
+        left: 0;
+        text-align: center;
+        width: 100%;
+        padding: 0 20px;
+        top: 40px; /* Adjust spacing */
+    }
+
+    .mainTextinEducation1, .mainTextinEducation2 {
+        font-size: 1.8rem;
+        padding: 0 15px; /* Add padding */
+    }
+    .projectDiv .mainProjectDiv .projectDivText .projectDivText1, .projectDivText2 {
+        font-size: 2rem;
+        padding: 0 15px; /* Add padding */
+    }
+    .projectDivText2 { /* The one with "I have one or two presentable projects..." */
+        font-size: 1.6rem; /* Make it slightly smaller */
+    }
+
+    /* Contact section to single column */
+    .contactDivText {
+        flex-direction: column;
+        height: auto;
+    }
+    .contactDivText1, .contactDivText2, .contactDivText3 {
+        width: 100%; /* Full width for each column */
+        margin-bottom: 30px; /* Space between stacked columns */
+    }
+
+    /* Further adjustments for vw fonts from menuDiv.css for smaller tablets/mobiles */
+    .projectMenu .coverContainer .menuText {
+        font-size: clamp(1.6rem, 7vw, 3.5rem);
+    }
+    .menuText1 {
+        font-size: clamp(1.8rem, 9vw, 4.5rem);
+        white-space: normal; /* Allow wrapping */
+    }
+    .contactTextMenu {
+        font-size: clamp(1rem, 3vw, 1.6rem) !important;
+    }
+    .contactTextMenuEmail {
+        font-size: clamp(0.8rem, 1.5vw, 1rem) !important;
+    }
+    .contactTextMenuEmail .lightText {
+        font-size: clamp(0.9rem, 2vw, 1.1rem);
+    }
+    .menuTextSpan1 { font-size: clamp(1.2rem, 5vw, 2.8rem); }
+    .menuTextSpan2 { font-size: clamp(1rem, 3.5vw, 2.2rem); }
+    .menuTextSpan3 { font-size: clamp(1.1rem, 3.8vw, 2.5rem); }
+    .menuTextSpan4, .menuTextSpan5, .menuTextSpan6, .menuTextSpan8 { font-size: clamp(1.2rem, 5vw, 2.8rem); }
+    .menuTextSpan7 { font-size: clamp(1.1rem, 4vw, 2.6rem); }
+
+    /* Improve tap target size for navbar items */
+    .navBar .text1 {
+        padding-top: 5px; /* Add some vertical padding */
+        padding-bottom: 5px;
+        min-height: 40px; /* Ensure a minimum tap height */
+        display: flex; /* To help center content if needed */
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) { /* Mobile phones */
+    .aboutMe .aboutMeMain, .whatIdo .mainWhatIdo, .educationDiv .mainEducationDiv, .projectDiv .mainProjectDiv, .contactDiv .mainContactDiv {
+        width: 95%; /* Use more screen width */
+    }
+    .rightTextDiv {
+        font-size: 1.6rem; /* Further reduce About me text */
+    }
+    .mainTextinEducation1, .mainTextinEducation2 {
+        font-size: 1.4rem; /* Further reduce Education description */
+        line-height: 1.4;
+    }
+    .projectDiv .mainProjectDiv .projectDivText .projectDivText1, .projectDivText2 {
+        font-size: 1.6rem; /* Further reduce Project section text */
+    }
+     .projectDivText2 {
+        font-size: 1.3rem;
+    }
+    .aboutMeText {
+        font-size: 1rem; /* Adjust "About Me" title */
+        top: 20px;
+    }
+    .whatIdo .mainWhatIdo .whatIdoText, 
+    .educationDiv .mainEducationDiv .educationText,
+    .projectDiv .mainProjectDiv .projectDivTitle,
+    .contactDiv .mainContactDiv .contactDivTitle {
+        font-size: 1rem; /* Section titles */
+        padding-left: 10px;
+    }
+    .leftImageDiv img {
+        height: 50%; /* Reduce image size in About me */
+    }
+
+    /* vw fonts adjustments for very small screens */
+    .projectMenu .coverContainer .menuText {
+        font-size: clamp(1.4rem, 8vw, 3rem);
+    }
+    .menuText1 {
+        font-size: clamp(1.6rem, 10vw, 4rem);
+    }
+    .contactTextMenu {
+        font-size: clamp(0.9rem, 4vw, 1.4rem) !important;
+    }
+    .contactTextMenuEmail {
+        font-size: clamp(0.7rem, 2vw, 0.9rem) !important;
+    }
+    .contactTextMenuEmail .lightText { /* This might be nested, target as .contactTextMenuEmail span.lightText or similar if this fails */
+        font-size: clamp(0.8rem, 2.5vw, 1rem);
+    }
+    .menuTextSpan1 { font-size: clamp(1.1rem, 6vw, 2.5rem); }
+    .menuTextSpan2 { font-size: clamp(0.9rem, 4vw, 2rem); }
+    .menuTextSpan3 { font-size: clamp(1rem, 4.5vw, 2.2rem); }
+    .menuTextSpan4, .menuTextSpan5, .menuTextSpan6, .menuTextSpan8 { font-size: clamp(1.1rem, 6vw, 2.5rem); }
+    .menuTextSpan7 { font-size: clamp(1rem, 5vw, 2.4rem); }
+
+    /* Ensure tap target improvements carry over/adjust for smallest screens */
+    .navBar .text1 {
+        padding-top: 8px; /* Slightly more padding if desired */
+        padding-bottom: 8px;
+        min-height: 44px; /* Slightly larger minimum tap height */
+    }
+}
