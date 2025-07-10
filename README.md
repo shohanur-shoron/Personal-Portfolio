@@ -26,7 +26,7 @@ Within this subsection of the "About Me" section, you'll find a list detailing m
 ## Education Page
 ![image](https://github.com/shohanur-shoron/Personal-Portfolio/assets/158572434/39627b7f-cb7e-4304-9286-3710451bc777)
 
-In the education section, I've showcased my supposed motivations and achievements. However, there's a twist: when you hover over the text, it reveals the truth - that I'm actually a self-proclaimed "lazy person." Additionally, these animations were created using the GSAP library.
+In the education section, I have showcased my supposed motivations and achievements. However, there's a twist: when you hover over the text, it reveals the truth - that I'm actually a self-proclaimed "lazy person." Additionally, these animations were created using the GSAP library.
 
 ![image](https://github.com/shohanur-shoron/Personal-Portfolio/assets/158572434/38685bae-e5ed-4d3d-9f9c-3f503615a850)
 This section showcases my educational timeline and the institutions attended. Hovering over the timeline reveals the institutions, providing a seamless browsing experience for visitors.
